@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Shravan Kumar Pandey - Data Science Enthusiast, Machine Learning, Python, Projects, and Contact.">
+    <title>Shravan Kumar Pandey | Data Science Enthusiast</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#home" class="logo">Shravan Kumar Pandey</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <h1>Hi, I'm <span class="primary">Shravan Kumar Pandey</span></h1>
+            <h2 class="typing-effect">Data Science Enthusiast</h2>
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-content">
+            <div class="about-photo">
+                <img src="images/profile.jpg" alt="Shravan Kumar Pandey Photo">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Shravan Kumar Pandey, a passionate Data Science enthusiast with a strong background in Python, Machine Learning, and Data Analysis. I love turning data into actionable insights and building impactful projects. Let's connect and create something amazing together!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="images/python.svg" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="skill-card">
+                    <img src="images/numpy.svg" alt="NumPy">
+                    <span>NumPy</span>
+                </div>
+                <div class="skill-card">
+                    <img src="images/pandas.svg" alt="Pandas">
+                    <span>Pandas</span>
+                </div>
+                <div class="skill-card">
+                    <img src="images/ml.svg" alt="Machine Learning">
+                    <span>Machine Learning</span>
+                </div>
+                <div class="skill-card">
+                    <img src="images/git.svg" alt="Git">
+                    <span>Git</span>
+                </div>
+                <div class="skill-card">
+                    <img src="images/github.svg" alt="GitHub">
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Data Analysis Dashboard</h3>
+                    <p>Interactive dashboard for visualizing and analyzing datasets using Python, Pandas, and Plotly.</p>
+                    <a href="https://github.com/shravankp/data-analysis-dashboard" target="_blank" class="btn">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Machine Learning Model Zoo</h3>
+                    <p>Collection of machine learning models with Jupyter notebooks and detailed documentation.</p>
+                    <a href="https://github.com/shravankp/ml-model-zoo" target="_blank" class="btn">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>GitHub Profile Analyzer</h3>
+                    <p>Web app to analyze GitHub profiles and visualize contributions using Python and Flask.</p>
+                    <a href="https://github.com/shravankp/github-profile-analyzer" target="_blank" class="btn">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>My personal portfolio website built with HTML, CSS, and JavaScript. Responsive and modern design.</p>
+                    <a href="https://github.com/shravankp/portfolio" target="_blank" class="btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-content">
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:shravanpandey.ds@gmail.com">shravanpandey.ds@gmail.com</a></p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/shravankp" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://github.com/shravankp" target="_blank" aria-label="GitHub"><img src="images/github.svg" alt="GitHub"></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contact-form" novalidate>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+                <div class="form-message" id="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">&#8679;</button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Shravan Kumar Pandey.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 
