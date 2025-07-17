@@ -73,19 +73,6 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Scroll to Top Button
-const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 400) {
-    scrollToTopBtn.classList.add('show');
-  } else {
-    scrollToTopBtn.classList.remove('show');
-  }
-});
-scrollToTopBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
 // Contact Form Validation
 const contactForm = document.getElementById('contact-form');
 const formMessage = document.getElementById('form-message');
@@ -110,4 +97,22 @@ if (contactForm) {
     formMessage.style.color = 'green';
     contactForm.reset();
   });
-} 
+}
+
+// Section reveal animations
+const revealSections = document.querySelectorAll('.section-card');
+const revealOptions = {
+  threshold: 0.15
+};
+const revealOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal');
+      observer.unobserve(entry.target);
+    }
+  });
+}, revealOptions);
+revealSections.forEach(section => {
+  section.classList.remove('reveal'); // Ensure hidden by default
+  revealOnScroll.observe(section);
+}); 

@@ -23,6 +23,9 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="nav-toggle" id="nav-toggle">
@@ -32,120 +35,222 @@
         </nav>
     </header>
 
-    <!-- Home Section -->
+    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="container hero-content">
-            <h1>Hi, I'm <span class="primary">Shravan Kumar Pandey</span></h1>
+            <h1>Hello, I'm <span class="primary">Shravan Kumar Pandey</span></h1>
             <h2 class="typing-effect">Data Science Enthusiast</h2>
-            <a href="#projects" class="btn primary-btn">View My Work</a>
+            <div class="hero-btns">
+                <a href="#contact" class="btn primary-btn">Get In Touch</a>
+                <a href="resume.pdf" class="btn" download>Download Resume</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="section-card">
         <div class="container about-content">
             <div class="about-photo">
-                <img src="images/profile.jpg" alt="Shravan Kumar Pandey Photo">
+                <img src="images/shravan.jpg" alt="Shravan Kumar Pandey Profile Photo">
             </div>
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>
-                    Hello! I'm Shravan Kumar Pandey, a passionate Data Science enthusiast with a strong background in Python, Machine Learning, and Data Analysis. I love turning data into actionable insights and building impactful projects. Let's connect and create something amazing together!
+                    I am a Data Science enthusiast passionate about building AI-driven solutions and data-driven applications. Currently pursuing B.Tech in Data Science from UTD, CSVTU, in my 5th semester.
                 </p>
+                <div class="about-edu">
+                    <strong>Education:</strong> B.Tech (Data Science), CSVTU | 2023–2027 | CGPA: 8.0
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section">
+    <section id="skills" class="section-card">
         <div class="container">
             <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <img src="images/python.svg" alt="Python">
-                    <span>Python</span>
+            <div class="skills-category">
+                <h3><span class="category-icon" aria-hidden="true"><svg class="category-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span> Programming</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tooltip="General-purpose programming language"><img src="images/python.svg" alt="Python"><span>Python</span></div>
                 </div>
-                <div class="skill-card">
-                    <img src="images/numpy.svg" alt="NumPy">
-                    <span>NumPy</span>
+            </div>
+            <div class="skills-category">
+                <h3><span class="category-icon" aria-hidden="true"><svg class="category-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/></svg></span> Libraries</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tooltip="Numerical computing library"><img src="images/numpy.svg" alt="NumPy"><span>NumPy</span></div>
+                    <div class="skill-card" data-tooltip="Data analysis and manipulation library"><img src="images/pandas.svg" alt="Pandas"><span>Pandas</span></div>
+                    <div class="skill-card" data-tooltip="Machine learning algorithms"><img src="images/ml.svg" alt="Machine Learning"><span>Machine Learning</span></div>
+                    <div class="skill-card" data-tooltip="Data visualization library"><img src="images/matplotlib.svg" alt="Matplotlib"><span>Matplotlib</span></div>
+                    <div class="skill-card" data-tooltip="Statistical data visualization library"><img src="images/seaborn.svg" alt="Seaborn"><span>Seaborn</span></div>
+                    <div class="skill-card" data-tooltip="Machine learning library"><img src="images/sklearn.svg" alt="Scikit-learn"><span>Scikit-learn</span></div>
+                    <div class="skill-card" data-tooltip="Web scraping library"><img src="images/bs4.svg" alt="BeautifulSoup"><span>BeautifulSoup</span></div>
+                    <div class="skill-card" data-tooltip="Web automation tool"><img src="images/selenium.svg" alt="Selenium"><span>Selenium</span></div>
                 </div>
-                <div class="skill-card">
-                    <img src="images/pandas.svg" alt="Pandas">
-                    <span>Pandas</span>
-                </div>
-                <div class="skill-card">
-                    <img src="images/ml.svg" alt="Machine Learning">
-                    <span>Machine Learning</span>
-                </div>
-                <div class="skill-card">
-                    <img src="images/git.svg" alt="Git">
-                    <span>Git</span>
-                </div>
-                <div class="skill-card">
-                    <img src="images/github.svg" alt="GitHub">
-                    <span>GitHub</span>
+            </div>
+            <div class="skills-category">
+                <h3><span class="category-icon" aria-hidden="true"><svg class="category-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94"/><path d="M9.69 8h11.48"/><path d="M7.38 12l5.74-9.94"/><path d="M9.69 16L3.95 6.06"/><path d="M14.31 16H2.83"/><path d="M16.62 12l-5.74 9.94"/></svg></span> Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tooltip="Version control system"><img src="images/git.svg" alt="Git"><span>Git</span></div>
+                    <div class="skill-card" data-tooltip="Code hosting platform"><img src="images/github.svg" alt="GitHub"><span>GitHub</span></div>
+                    <div class="skill-card" data-tooltip="Code editor"><img src="images/vscode.svg" alt="VS Code"><span>VS Code</span></div>
+                    <div class="skill-card" data-tooltip="Interactive computing environment"><img src="images/jupyter.svg" alt="Jupyter Notebook"><span>Jupyter</span></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <section id="projects" class="section-card">
         <div class="container">
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Data Analysis Dashboard</h3>
-                    <p>Interactive dashboard for visualizing and analyzing datasets using Python, Pandas, and Plotly.</p>
-                    <a href="https://github.com/shravankp/data-analysis-dashboard" target="_blank" class="btn">View on GitHub</a>
+                    <h3>Movie Recommendation System</h3>
+                    <p>A personalized movie recommendation system built using Python, Streamlit, and machine learning techniques.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Streamlit</span><span>Machine Learning</span><span>Pandas</span><span>Scikit-learn</span>
+                    </div>
+                    <a href="https://github.com/Shravan4598/Movie-Recommendation-System" target="_blank" class="btn">View Code</a>
                 </div>
                 <div class="project-card">
-                    <h3>Machine Learning Model Zoo</h3>
-                    <p>Collection of machine learning models with Jupyter notebooks and detailed documentation.</p>
-                    <a href="https://github.com/shravankp/ml-model-zoo" target="_blank" class="btn">View on GitHub</a>
+                    <h3>Weather Dashboard App</h3>
+                    <p>A dynamic web app that allows users to view real-time weather information for any city using OpenWeatherMap API.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>API Integration</span><span>Web Development</span><span>OpenWeatherMap</span>
+                    </div>
+                    <a href="https://github.com/Shravan4598/Weather-Dashboard" target="_blank" class="btn">View Code</a>
                 </div>
-                <div class="project-card">
-                    <h3>GitHub Profile Analyzer</h3>
-                    <p>Web app to analyze GitHub profiles and visualize contributions using Python and Flask.</p>
-                    <a href="https://github.com/shravankp/github-profile-analyzer" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-card">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3>AI Azure Internship Program</h3>
+                    <p><strong>Edunet Foundation (with Microsoft & AICTE)</strong> | June 2025 – July 2025</p>
+                    <ul>
+                        <li>Participated in AI and Azure cloud technologies training program.</li>
+                        <li>Hands-on with AI, ML, and Cloud Computing using Microsoft Azure.</li>
+                        <li>Worked on real-world projects using Azure Custom Vision and Deep Learning.</li>
+                        <li>Attended masterclasses on Generative AI and Neural Networks.</li>
+                    </ul>
+                    <div class="experience-links">
+                        <a href="images/ai_azure_offer.pdf" class="btn" target="_blank">View Offer Letter</a>
+                        <a href="images/ai_azure_certificate.pdf" class="btn" target="_blank">View Completion Certificate</a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Portfolio Website</h3>
-                    <p>My personal portfolio website built with HTML, CSS, and JavaScript. Responsive and modern design.</p>
-                    <a href="https://github.com/shravankp/portfolio" target="_blank" class="btn">View on GitHub</a>
+                <div class="experience-item">
+                    <h3>Data Analyst Internship</h3>
+                    <p><strong>Blue Planet Info Solution</strong> | May 2025 – Present</p>
+                    <ul>
+                        <li>Worked on data analysis projects and business intelligence solutions.</li>
+                        <li>Data collection, cleaning, and analysis for business decisions.</li>
+                        <li>Data visualization and reporting for internal teams.</li>
+                    </ul>
+                    <div class="experience-links">
+                        <a href="images/blueplanet_offer.pdf" class="btn" target="_blank">View Offer Letter</a>
+                        <a href="images/blueplanet_certificate.pdf" class="btn" target="_blank">View Completion Certificate</a>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-card">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certification-card">
+                <h3>Complete Data Science, Machine Learning, DL, NLP Bootcamp</h3>
+                <p><strong>Certificate ID:</strong> UC-c2e77a53-0576-41d4-815b-89df85e1eef6</p>
+                <p><strong>Instructor:</strong> Krish Naik, KRISHAI Technologies Pvt Ltd</p>
+                <p><strong>Reference:</strong> 0004</p>
+                <a href="https://www.udemy.com/certificate/UC-c2e77a53-0576-41d4-815b-89df85e1eef6/" target="_blank" class="btn">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section-card">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-placeholder">
+                <p>Blog coming soon! Stay tuned for articles and tutorials.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container contact-content">
-            <div class="contact-info">
-                <h2>Contact Me</h2>
-                <p>Email: <a href="mailto:shravanpandey.ds@gmail.com">shravanpandey.ds@gmail.com</a></p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/shravankp" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-                    <a href="https://github.com/shravankp" target="_blank" aria-label="GitHub"><img src="images/github.svg" alt="GitHub"></a>
+    <section id="contact" class="section-card">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info-modern">
+                    <h2>Get In Touch</h2>
+                    <div class="contact-icons-row">
+                        <a href="mailto:shravankumarpandey825412@gmail.com" class="contact-icon-btn" title="Email" target="_blank">
+                            <img src="images/email.svg" alt="Email"><span>Email</span>
+                        </a>
+                        <a href="tel:8102223747" class="contact-icon-btn" title="Phone">
+                            <img src="images/phone.svg" alt="Phone"><span>Call</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shravan-kumar-pandey-309786309/" class="contact-icon-btn" title="LinkedIn" target="_blank">
+                            <img src="images/linkedin.svg" alt="LinkedIn"><span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Shravan4598/Shravan4598" class="contact-icon-btn" title="GitHub" target="_blank">
+                            <img src="images/github.svg" alt="GitHub"><span>GitHub</span>
+                        </a>
+                    </div>
+                    <div class="contact-details-list">
+                        <div class="contact-cards-grid">
+                            <div class="contact-card-item">
+                                <img src="images/email.svg" alt="Email" class="contact-card-icon">
+                                <div class="contact-card-label">Email</div>
+                                <a href="mailto:shravankumarpandey825412@gmail.com" class="contact-card-value">shravankumarpandey825412@gmail.com</a>
+                            </div>
+                            <div class="contact-card-item">
+                                <img src="images/phone.svg" alt="Phone" class="contact-card-icon">
+                                <div class="contact-card-label">Phone</div>
+                                <a href="tel:8102223747" class="contact-card-value">8102223747</a>
+                            </div>
+                            <div class="contact-card-item">
+                                <img src="images/linkedin.svg" alt="LinkedIn" class="contact-card-icon">
+                                <div class="contact-card-label">LinkedIn</div>
+                                <a href="https://www.linkedin.com/in/shravan-kumar-pandey-309786309/" class="contact-card-value" target="_blank">shravan-kumar-pandey-309786309</a>
+                            </div>
+                            <div class="contact-card-item">
+                                <img src="images/github.svg" alt="GitHub" class="contact-card-icon">
+                                <div class="contact-card-label">GitHub</div>
+                                <a href="https://github.com/Shravan4598/Shravan4598" class="contact-card-value" target="_blank">Shravan4598</a>
+                            </div>
+                            <div class="contact-card-item">
+                                <img src="images/location.svg" alt="Location" class="contact-card-icon">
+                                <div class="contact-card-label">Location</div>
+                                <div class="contact-card-value">Jharkhand, India</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="contact-divider"><span>OR</span></div>
+                <form class="contact-form" id="contact-form" novalidate>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                    <div class="form-message" id="form-message"></div>
+                </form>
             </div>
-            <form class="contact-form" id="contact-form" novalidate>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn primary-btn">Send Message</button>
-                <div class="form-message" id="form-message"></div>
-            </form>
         </div>
     </section>
-
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" title="Go to top">&#8679;</button>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2025 Shravan Kumar Pandey.</p>
+            <p>© 2025 Shravan Kumar Pandey. All rights reserved.</p>
         </div>
     </footer>
 
